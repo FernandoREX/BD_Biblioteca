@@ -80,8 +80,12 @@
 
 ## LibroBiblioteca
 
-- **ID_material**: Identificador del material del libro (CHAR(5), PRIMARY KEY, FOREIGN KEY REFERENCES Material(ID_material)).
-- **ISBN**: Número de ISBN del libro.
+- **ISBN**: Número de ISBN del libro (CHAR(13), PRIMARY KEY).
+- **ID_material**: Identificador del material del libro (CHAR(5), FOREIGN KEY REFERENCES Material(ID_material)).
 - **NUM_Adquisicion**: Número de adquisición del libro.
 - **carrera_tema**: Carrera del tema del libro.
 - **edicion**: Número de edición del libro.
+
+---
+
+**Script de creación de la base de datos de la biblioteca por Fernando Rosas Gómez**
